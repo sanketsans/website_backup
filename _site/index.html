@@ -67,6 +67,7 @@ ul {
   margin: 0;
   padding: 0;
   width: 500px;
+
   /* background-color: #f1f1f1; */
 }
 
@@ -75,13 +76,28 @@ li a {
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
+  display: inline-block;
+  padding: 1em 2em;
+  text-align: center;
+  background: white;
+
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(to left, white 50%, black 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
 }
 
 /* Change the link color on hover */
 li a:hover {
-  background-color: #555;
+  background-position: left;
+  /* background-color: #555; */
   color: white;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+
 }
+
 </style>
 </head>
 <body>
