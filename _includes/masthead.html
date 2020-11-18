@@ -4,13 +4,13 @@
   {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {% endif %}
 
-<img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
+<!-- <img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
 <h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
 <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
   {{ user.bio }}
-</p>
+</p> -->
 
-{% if include.metadata %}
+<!-- {% if include.metadata %}
   <div class="f4 mb-6">
     {% if user.name %}
       <div class="{{ metadata_styles }}">
@@ -51,12 +51,18 @@
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
     {% endif %}
   </div>
-{% endif %}
+{% endif %} -->
 
 <!DOCTYPE html>
 <html>
 <head>
 <style>
+
+p.small {
+  font-variant: small-caps;
+  font-size: 20px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -87,10 +93,32 @@ li a:hover {
   background-position: left;
   /* background-color: #555; */
   color: white;
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
 
+a:link, a:visited {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  background: white;
+
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(to left, white 50%, black 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+}
+
+a:hover, a:active {
+  background-position: left;
+  /* background-color: #555; */
+  color: white;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 </style>
@@ -99,12 +127,21 @@ li a:hover {
 
 <!-- <h2>Vertical Navigation Bar</h2> -->
 
-<ul>
-  <li><a href="#home"><h1>Home</h1></a></li>
-  <li><a href="#blogs"><h1>Blogs</h1></a></li>
-  <li><a href="#projects"><h1>Projects</h1></a></li>
-  <li><a href="#contact"><h1>Contact</h1></a></li>
-</ul>
+<img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
+<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
+<p class="small">
+  PhD student at <a href="https://pavis.iit.it"><u>PAVIS, IIT<u></a>
+
+</p>
+
+<div class="Navigation bar">
+  <ul>
+    <li class="active"><a href="#home"><h2>home</h2></a></li>
+    <li><a href="#post"><h2>blogs</h2></a></li>
+    <li><a href="#projects"><h2>projects</h2></a></li>
+    <li><a href="#contact"><h2>contact</h2></a></li>
+  </ul>
+</div>
 
 </body>
 </html>
