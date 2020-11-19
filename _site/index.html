@@ -73,12 +73,14 @@ ul {
   margin: 0;
   padding: 0;
   width: 500px;
+  margin-top: 50px;
 
   /* background-color: #f1f1f1; */
 }
 
 li a {
   display: block;
+  margin-top: 10px;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
@@ -117,7 +119,7 @@ a:link, a:visited {
   transition: .5s ease-out;
 }
 
-a:hover, a:active {
+li a.active {
   background-position: left;
   /* background-color: #555; */
   color: white;
@@ -138,14 +140,17 @@ a:hover, a:active {
   PhD student at <a href="https://pavis.iit.it"><u>PAVIS, IIT</u></a>
 </p>
 
-<div class="Navigation bar">
-  <ul>
-    <li class="active"><a href="#home"><h2>home</h2></a></li>
-    <li><a href="#post"><h2>blogs</h2></a></li>
-    <li><a href="#projects"><h2>projects</h2></a></li>
-    <li><a href="#contact"><h2>contact</h2></a></li>
-  </ul>
+<div id="navBar">
+  <nav>
+    <ul>
+      <li><a class="active" href="#home"><h2>home</h2></a></li>
+      <li><a href="#post"><h2>blogs</h2></a></li>
+      <li><a href="#projects"><h2>projects</h2></a></li>
+      <li><a href="#contacts" target="_self"><h2>contact</h2></a></li>
+    </ul>
+  </nav>
 </div>
+
 
 </body>
 </html>
@@ -529,7 +534,7 @@ h1.thicker{
   <p class="f4 mb-4 text-gray">/tʃaʊ/</p>
   <p class="small">
     I'm Sanket, an aspiring researcher working in the domain of Deep Learning, Computer Vision and Machine Learning with a focus on Multi Modal
-    Deep learning. I prefer Tabs over spaces. I am currently a PhD student at PAVIS, Italian Institute of Technology under the supervision of Dr. Alessio Del Bue.
+    Deep learning. I am currently a PhD student at PAVIS, Italian Institute of Technology under the supervision of Dr. Alessio Del Bue.
   </p>
   <p class="small">
 
@@ -540,9 +545,8 @@ h1.thicker{
 
   <p class="small">
     I am also trying to get into open source, particularly focusing on computer vision based modules.
-    <h3>PS: I am still updating this site. </h3>
+    <h3>PS: I am still updating this site, few commits a day. </h3>
 
-    <h3> PPS : I like to train deep nets on large unlabelled datasets. </h3>
     <p class="small" style:"float; left;"><img src="claim_sign.png" alt="claim_sign" width="15" height="15" border="1px">  This claim is disputed</p>
   </p>
   <!-- <div class="d-flex flex-wrap gutter-condensed mb-4">
