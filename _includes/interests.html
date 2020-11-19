@@ -31,28 +31,42 @@ a:hover, a:active {
   transform: scale(1);
 }
 
+h1.thicker{
+  font: 55px Arial, sans-serif;
+  font-weight: 800;
+}
+
 </style>
 </head>
 <body>
 
-  <h1 {% if site.style == 'dark' %}class="text-white"{% endif %}>Ciao !</h1>
+  <h1 class= "thicker {% if site.style == 'dark' %}class="text-white"{% endif %}">Ciao !</h1>
   <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">/tʃaʊ/</p>
   <p class="small">
     I'm Sanket, an aspiring researcher working in the domain of Deep Learning, Computer Vision and Machine Learning with a focus on Multi Modal
     Deep learning. I prefer Tabs over spaces. I am currently a PhD student at PAVIS, Italian Institute of Technology under the supervision of Dr. Alessio Del Bue.
+  </p>
+  <p class="small">
 
-
-    Previously, I have worked with <a href=""#bell_labs">Nokia Bell Labs</a> ,  <a href="#smartvizx">SmartVizx</a> , <a href="#EY">Ernst and Young</a>  with their research
+    Previously, I have worked with <a href="#bell_labs"><u>Nokia Bell Labs</u></a> ,  <a href="#smartvizx"><u>SmartVizx</u></a> , <a href="#EY"><u>Ernst and Young</u></a>  with their research
     department. Besides, I also had two startups in my college and have had two provisional patents. I have also been an active participant in technical communities and
     presented multiple techincal talks and workshops at various level(s).
   </p>
-  <div class="d-flex flex-wrap gutter-condensed mb-4">
+
+  <p class="small">
+    I am also trying to get into open source, particularly focusing on computer vision based modules.
+    <h3>PS: I am still updating this site. </h3>
+
+    <h3> PPS : I like to train deep nets on large unlabelled datasets. </h3>
+    <p class="small" style:"float; left;"><img src="claim_sign.png" alt="claim_sign" width="15" height="15" border="1px">  This claim is disputed</p>
+  </p>
+  <!-- <div class="d-flex flex-wrap gutter-condensed mb-4">
     {% for topic in site.topics %}
       <div class="col-6 col-md-12 col-lg-6 col-xl-4 mb-3">
         {% include topic-card.html %}
       </div>
     {% endfor %}
-  </div>
+  </div> -->
 
 </body>
 </html>
