@@ -146,13 +146,14 @@ li a.active {
       <!--
         Reference was taken from https://github.com/BorealBlizzard/BorealBlizzard.github.io for link syncing
       <!-->
-      <li><a class="active" href="/"><h2>home</h2></a></li>
-      <li><a href="/blogs"><h2>blogs</h2></a></li>
-      <li><a href="/projects"><h2>projects</h2></a></li>
+      <li ><a class="active" href="/"><h2>home</h2></a></li>
+      <li ><a href="/blogs"><h2>blogs</h2></a></li>
+      <li ><a href="/projects"><h2>projects</h2></a></li>
       <li ><a href="/contacts"><h2>contact</h2></a></li>
     </ul>
   </nav>
 </div>
+
 
 
 </body>
@@ -174,6 +175,25 @@ p.small {
 h1.thicker{
   font: 55px Arial, sans-serif;
   font-weight: 800;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+
+  background: linear-gradient(to left, white 50%, black 50%) right;
+  background-size: 100%;
+  transition: .5s ease-out;
+}
+
+a:hover {
+  background-position: left;
+  color: white;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 </style>
 
