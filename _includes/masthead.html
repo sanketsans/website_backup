@@ -138,10 +138,13 @@ li a.active {
 <div id="navBar">
   <nav class="main_nav">
     <ul>
-      <li><a class="active" href="/"><h2>home</h2></a></li>
-      <li><a href="thoughts.html"><h2>blogs</h2></a></li>
-      <li><a href="#projects"><h2>projects</h2></a></li>
-      <li ><a href="{{'contact.html'|absolute_url}}"><h2>contact</h2></a></li>
+      <!--
+        Reference was taken from https://github.com/BorealBlizzard/BorealBlizzard.github.io for link syncing
+      <!-->
+      <li><a class="active" href="{{site.baseurl}}/"><h2>home</h2></a></li>
+      <li><a href="{{site.baseurl}}/blogs"><h2>blogs</h2></a></li>
+      <li><a href="{{site.baseurl}}/projects"><h2>projects</h2></a></li>
+      <li ><a href="{{site.baseurl}}/contacts"><h2>contact</h2></a></li>
     </ul>
   </nav>
 </div>
