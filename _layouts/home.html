@@ -1,5 +1,11 @@
 {% include header.html %}
 
+<style>
+p.first{
+  margin-top: 70px;
+        }
+</style>
+
 {% if site.layout == 'stacked' %}
   <div class="container-lg py-6 p-responsive text-center">
     {% include masthead.html metadata=true %}
@@ -20,6 +26,7 @@
 
     {% unless posts_total == 0 %}
       <div class="my-6">
+        <p class="first"> </p>
         {% include thoughts.html %}
       </div>
     {% endunless %}
@@ -45,6 +52,7 @@
         {% endif %}
 
         {% unless posts_total == 0 %}
+          <p class="first"></p>
           {% include thoughts.html %}
         {% endunless %}
       </div>

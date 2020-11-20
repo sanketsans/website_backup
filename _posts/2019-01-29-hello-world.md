@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Jekyll. This is going to be a long post !!"
+title: "This is going to be a sample post !!"
 published: true
 ---
 
