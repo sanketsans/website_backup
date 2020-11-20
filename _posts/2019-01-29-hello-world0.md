@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Jekyll. This is going to be a long post !!"
+title: "Welcome to Jekyll post 2. This is alos a long post !"
 published: true
 ---
 
