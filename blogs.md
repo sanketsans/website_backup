@@ -1,10 +1,14 @@
+---
+layout: default
+---
+
 <style>
 p.small {
   font-variant: small-caps;
   font-size: 20px;
 }
 h1.thicker{
-  font: 55px Arial, sans-serif;
+  font: 85px Arial, sans-serif;
   font-weight: 800;
 }
 </style>

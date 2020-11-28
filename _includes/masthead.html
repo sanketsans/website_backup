@@ -75,7 +75,7 @@ ul {
 
 li a {
   display: block;
-  margin-top: 10px;
+  margin-top: 15px;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
@@ -134,22 +134,21 @@ li a.active {
 <p class="small">
   PhD student at <a href="https://pavis.iit.it"><u>PAVIS, IIT</u></a>
 
-  <br><span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">sanketsans</span>
+  <br><br><span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">sanketsans</span>
 </p>
 
-<div id="navBar">
-  <nav class="main_nav">
-    <ul>
-      <!--
-        Reference was taken from https://github.com/BorealBlizzard/BorealBlizzard.github.io for link syncing
-      <!-->
-      <li ><a class="active" href="{{site.baseurl}}/"><h2>home</h2></a></li>
-      <li ><a href="{{site.baseurl}}/blogs"><h2>blogs</h2></a></li>
-      <!-- <li ><a href="{{site.baseurl}}/projects"><h2>projects</h2></a></li> -->
-      <li ><a href="{{site.baseurl}}/contacts"><h2>contact</h2></a></li>
-    </ul>
-  </nav>
-</div>
+{% assign current = page.url | downcase | split: '/' %}
+<nav class="main_nav">
+  <ul>
+    <!--
+      Reference was taken from https://github.com/BorealBlizzard/BorealBlizzard.github.io for link syncing
+    <!-->
+    <li ><a href="{{site.baseurl}}/" class="active"><h2>home</h2></a></li>
+    <li ><a href="{{site.baseurl}}/blogs" ><h2>blogs</h2></a></li>
+    <!-- <li ><a href="{{site.baseurl}}/projects"><h2>projects</h2></a></li> -->
+    <li ><a href="{{site.baseurl}}/contacts" ><h2>contact</h2></a></li>
+  </ul>
+</nav>
 
 
 

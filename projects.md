@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <style>
 p.small {
   font-variant: small-caps;
