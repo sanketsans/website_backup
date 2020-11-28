@@ -4,7 +4,7 @@ layout: default
 
 <style>
 p.small {
-  font-variant: small-caps;
+  font-variant: normal;
   font-size: 20px;
 }
 h1.thicker{
