@@ -94,7 +94,7 @@ ul {
 
 li a {
   display: block;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
@@ -135,11 +135,12 @@ a:link, a:visited {
 
 li a.active {
   background-position: left;
-  /* background-color: #555; */
+  /* background-color: #f1f1f1; */
   color: white;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+  transition: .01s ease-out;
 }
 
 </style>
@@ -153,21 +154,31 @@ li a.active {
 <p class="small">
   PhD student at <a href="https://pavis.iit.it"><u>PAVIS, IIT</u></a>
 
-  <br><br><span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">sanketsans</span>
+  <br><span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">sanketsans</span>
 </p>
-
 
 <nav class="main_nav">
   <ul>
     <!--
       Reference was taken from https://github.com/BorealBlizzard/BorealBlizzard.github.io for link syncing
     <!-->
-    <li ><a href="/" class="active"><h2>home</h2></a></li>
-    <li ><a href="/blogs" ><h2>blogs</h2></a></li>
+    <li ><a id="mainPage" href="/" ><h2>home</h2></a></li>
+    <li style="margin-top:15px"><a id="blogs" href="/blogs" ><h2>blogs</h2></a></li>
     <!-- <li ><a href="/projects"><h2>projects</h2></a></li> -->
-    <li ><a href="/contacts" ><h2>contact</h2></a></li>
+    <li style="margin-top:15px"><a id="contacts" href="/contacts" ><h2>contact</h2></a></li>
   </ul>
 </nav>
+
+<script>
+  var id = window.location.href.split('/')[3];
+  if (id == ''){
+    document.getElementById("mainPage").className = "active";
+  }
+  else{
+    document.getElementById(id).className = "active";
+  }
+
+</script>
 
 
 
