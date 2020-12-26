@@ -1,6 +1,6 @@
 ---
 title: "This is going to be a sample post !!"
-published: true
+published: false
 ---
 
 **Hello world**, this is my first Jekyll blog post.
