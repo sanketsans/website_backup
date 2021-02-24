@@ -132,10 +132,12 @@ check out the project here - <a href="https://github.com/sanketsans/Pix-2-Pix-GA
 </figure>
 
 <p class="small">Meanwhile, I started my Phd in November '20, and due to hectic schedule I had to focus more time to my PhD from December.</p>
-<p class="small">But, there are appreciable results using CycleGAN. I am afraid I cannot share the result, since that was performed by other member(s) of the group. </p>
+<p class="small">But, there are appreciable results using CycleGAN. </p>
 <p class="small">why so ? -</p>
   <li><p class="small">cyclic loss of the images might lead to a better mapping.</p></li>
   <li><p class="small">unpaired approach </p></li>
+
+<p class="small"> You can read the entire paper here: <a href="https://www.launchpad.ai/blog/the-usage-of-cyclegan-for-image-translation-to-increase-the-size-of-fridge-food-types-dataset"><b>The Usage of CycleGAN for Image Translation to Increase the Size of Fridge Food Types Dataset</b></a></p>
 
 <h1 class= "thicker_head {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="35px">The Good, the Bad and Neutral:</h1>
 <h3 class= "thicker_verdict {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="30px">The Good :</h3>
