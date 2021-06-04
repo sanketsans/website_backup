@@ -17,5 +17,5 @@ h1.thicker{
 <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">/blɒɡ/</p>
 
 <p class="small">
-  Work in progress !
+  Work in progress ! And will always be ! Just checking 
 </p>
