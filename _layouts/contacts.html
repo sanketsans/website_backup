@@ -194,8 +194,8 @@ margin-top: 10%;
 </head>
 <body id="contacts">
 
-  <h1 class= "thicker ">Contatto !</h1>
-  <p class="f4 mb-4 text-gray">con·tàt·to</p>
+  <h1 class= "thicker {% if site.style == 'dark' %}class="text-white"{% endif %}">Contatto !</h1>
+  <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">con·tàt·to</p>
   <p class="small">
     You can reach out to me via : <br><br>
 
