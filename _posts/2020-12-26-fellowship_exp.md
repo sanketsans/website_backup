@@ -6,7 +6,7 @@ published: true
 
 p.small {
   font-variant: normal;
-  font-size: 20px;
+  font-size: 150%;
 }
 
 a:link, a:visited {
@@ -31,21 +31,28 @@ a:hover, a:active {
   -ms-transform: scale(1);
   transform: scale(1);
 }
-h2.thicker_head{
-  font: 35px Arial, sans-serif;
-  font-weight: 500;
-  margin-top: 40px;
-}
-h3.thicker_verdict{
-  font: 35px Arial, sans-serif;
-  font-weight: 500;
-  margin-top: 20px;
-}
 
 h1.thicker_head{
+  font: 500% Arial, sans-serif;
+  font-weight: 800;
+  margin-top: 10%;
+}
+
+h2.thicker_head{
+  font: 400% Arial, sans-serif;
+  font-weight: 800;
+  margin-top: 10%;
+}
+h3.thicker_verdict{
+  font: 300% Arial, sans-serif;
+  font-weight: 800;
+  margin-top: 10%;
+}
+
+<!-- h1.thicker_head{
   font: 45px Arial, sans-serif;
   font-weight: 800;
-}
+} -->
 .img-container {
   position: relative;
   top: 0;
@@ -63,7 +70,7 @@ h1.thicker_head{
 }
 </style>
 
-<h1 class= "thicker_head {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="15px">Another Data Science Fellowship ?</h1>
+<h1 class= "thicker_head {% if site.style == 'dark' %}class="text-white"{% endif %}">Another Data Science Fellowship ?</h1>
 
 <p class="small">
 <a href="https://fellowship.ai"><b>Fellowship.Ai</b></a> is a four months long <b>"unpaid"</b> fellowship on various machine learning topics. The program is 100 % remote,
@@ -80,7 +87,7 @@ The program started with an orientation of all the accepted fellows for the coho
 choice. Most of the projects during my term was either done in partnership with other companies such as Levis or GE or very new
 projects ( you will be the first to contribute to it ). Each project has about 5-6 fellows working on it. There are no mentors as such.</p>
 
-<h1 class= "thicker_head {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="35px">Rolling with my crew </h1>
+<h1 class= "thicker_head {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="2%">Rolling with my crew </h1>
 <p class="small">
 I was initially working on an <b><i> 'Emotion Detection' </i></b> project - where based on the video frames you have to classify if the person
 in the zoom meeting is engaged, non-engaged, animated or distracted. For the first month, we spent collecting the dataset from
@@ -139,22 +146,22 @@ check out the project here - <a href="https://github.com/sanketsans/Pix-2-Pix-GA
 
 <p class="small"> You can read the entire paper here: <a href="https://www.launchpad.ai/blog/the-usage-of-cyclegan-for-image-translation-to-increase-the-size-of-fridge-food-types-dataset"><b>The Usage of CycleGAN for Image Translation to Increase the Size of Fridge Food Types Dataset</b></a></p>
 
-<h1 class= "thicker_head {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="35px">The Good, the Bad and Neutral:</h1>
-<h3 class= "thicker_verdict {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="30px">The Good :</h3>
+<h1 class= "thicker_head {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="2%">The Good, the Bad and Neutral:</h1>
+<h3 class= "thicker_verdict {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="2%">The Good :</h3>
 <li><p class="small">There are "mostly" regular reading session, where someone from the fellowship presents a paper which can help to stay updated
 with current ML research.</p></li>
 <li><p class="small"> You will working on real-world projects with an inter-disciplinary team from around the world.</p></li>
 <li><p class="small"> Also, the fellowship provide an opportunity to regular performers to join them full-time or get a job at one of the partner companies. Did I mention one of my team member got an internship at Nike ML group and few others at Levis.</p></li>
 
-<h3 class= "thicker_verdict {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="30px">The Bad :</h3>
+<h3 class= "thicker_verdict {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="2%">The Bad :</h3>
 <li><p class="small">There are too many meeting. Group meeting, meeting with the co-founder, demos, etc. etc.</p></li>
 <li><p class="small">The program is UNPAID - which is a bummer. I'd recommend it highly to those who are either looking for a switch in your career or a final year student(who is done with the internship) or like me who has time before starting you higher education to apply for it.</p></li>
 <li><p class="small">Time Differences: Meetings are at quite unusual time at night for someone in Asia/Pacific region.</p></li>
 
-<h3 class= "thicker_verdict {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="30px">Neutral (Bonus) :</h3>
+<h3 class= "thicker_verdict {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="2%">Neutral (Bonus) :</h3>
 <p class="small">
 Job offers from partner companies are mostly confined to US residents. But there were externships available from the fellowship to fellows everywhere.   </p>
 
-<h1 class= "thicker_head {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="35px">Verdict : </h1>
+<h1 class= "thicker_head {% if site.style == 'dark' %}class="text-white"{% endif %}" margin-top="2%">Verdict : </h1>
 <p class="small">
 Fellowship does provide a platform for those intermediate in their learning curve of Machine Learning. Since, the program is unpaid, all the fellows(I met), were not working elsewhere full-time. So, I think if you are looking to either switch your career in an ML field or final year student(not the internship) - this will be a great opportunity to learn from real-world projects and potentially get job offers.</p>
